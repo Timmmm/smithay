@@ -1,0 +1,2196 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `egl` mod in crate `smithay`."><meta name="keywords" content="rust, rustlang, rust-lang, egl"><title>smithay::backend::graphics::egl::ffi::egl - Rust</title><link rel="stylesheet" type="text/css" href="../../../../../../normalize.css"><link rel="stylesheet" type="text/css" href="../../../../../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../../../../../dark.css"><link rel="stylesheet" type="text/css" href="../../../../../../light.css" id="themeStyle"><script src="../../../../../../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Module egl</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#constants">Constants</a></li><li><a href="#statics">Statics</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'><a href='../../../../../index.html'>smithay</a>::<wbr><a href='../../../../index.html'>backend</a>::<wbr><a href='../../../index.html'>graphics</a>::<wbr><a href='../../index.html'>egl</a>::<wbr><a href='../index.html'>ffi</a></p><script>window.sidebarCurrent = {name: 'egl', ty: 'mod', relpath: '../'};</script><script defer src="../sidebar-items.js"></script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../../../../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../../../../../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../../../../../../settings.html"><img src="../../../../../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='in-band'>Module <a href='../../../../../index.html'>smithay</a>::<wbr><a href='../../../../index.html'>backend</a>::<wbr><a href='../../../index.html'>graphics</a>::<wbr><a href='../../index.html'>egl</a>::<wbr><a href='../index.html'>ffi</a>::<wbr><a class="mod" href=''>egl</a></span><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../../../../../../src/smithay/backend/graphics/egl/ffi.rs.html#22-177' title='goto source code'>[src]</a></span></h1><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="BindAPI/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::BindAPI'>BindAPI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="BindTexImage/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::BindTexImage'>BindTexImage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="BindWaylandDisplayWL/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::BindWaylandDisplayWL'>BindWaylandDisplayWL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="ChooseConfig/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::ChooseConfig'>ChooseConfig</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="ClientWaitSync/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::ClientWaitSync'>ClientWaitSync</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CopyBuffers/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CopyBuffers'>CopyBuffers</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreateContext/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreateContext'>CreateContext</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreateImage/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreateImage'>CreateImage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreateImageKHR/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreateImageKHR'>CreateImageKHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePbufferFromClientBuffer/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePbufferFromClientBuffer'>CreatePbufferFromClientBuffer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePbufferSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePbufferSurface'>CreatePbufferSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePixmapSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePixmapSurface'>CreatePixmapSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePlatformPixmapSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePlatformPixmapSurface'>CreatePlatformPixmapSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePlatformPixmapSurfaceEXT/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePlatformPixmapSurfaceEXT'>CreatePlatformPixmapSurfaceEXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePlatformWindowSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePlatformWindowSurface'>CreatePlatformWindowSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreatePlatformWindowSurfaceEXT/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreatePlatformWindowSurfaceEXT'>CreatePlatformWindowSurfaceEXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreateSync/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreateSync'>CreateSync</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="CreateWindowSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::CreateWindowSurface'>CreateWindowSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="DestroyContext/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::DestroyContext'>DestroyContext</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="DestroyImage/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::DestroyImage'>DestroyImage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="DestroyImageKHR/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::DestroyImageKHR'>DestroyImageKHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="DestroySurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::DestroySurface'>DestroySurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="DestroySync/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::DestroySync'>DestroySync</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetConfigAttrib/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetConfigAttrib'>GetConfigAttrib</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetConfigs/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetConfigs'>GetConfigs</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetCurrentContext/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetCurrentContext'>GetCurrentContext</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetCurrentDisplay/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetCurrentDisplay'>GetCurrentDisplay</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetCurrentSurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetCurrentSurface'>GetCurrentSurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetDisplay/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetDisplay'>GetDisplay</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetError/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetError'>GetError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetPlatformDisplay/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetPlatformDisplay'>GetPlatformDisplay</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetPlatformDisplayEXT/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetPlatformDisplayEXT'>GetPlatformDisplayEXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetProcAddress/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetProcAddress'>GetProcAddress</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="GetSyncAttrib/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::GetSyncAttrib'>GetSyncAttrib</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="Initialize/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::Initialize'>Initialize</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="MakeCurrent/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::MakeCurrent'>MakeCurrent</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="QueryAPI/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::QueryAPI'>QueryAPI</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="QueryContext/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::QueryContext'>QueryContext</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="QueryString/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::QueryString'>QueryString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="QuerySurface/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::QuerySurface'>QuerySurface</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="QueryWaylandBufferWL/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::QueryWaylandBufferWL'>QueryWaylandBufferWL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="ReleaseTexImage/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::ReleaseTexImage'>ReleaseTexImage</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="ReleaseThread/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::ReleaseThread'>ReleaseThread</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="SurfaceAttrib/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::SurfaceAttrib'>SurfaceAttrib</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="SwapBuffers/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::SwapBuffers'>SwapBuffers</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="SwapInterval/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::SwapInterval'>SwapInterval</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="Terminate/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::Terminate'>Terminate</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="UnbindWaylandDisplayWL/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::UnbindWaylandDisplayWL'>UnbindWaylandDisplayWL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="WaitClient/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::WaitClient'>WaitClient</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="WaitGL/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::WaitGL'>WaitGL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="WaitNative/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::WaitNative'>WaitNative</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="WaitSync/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::WaitSync'>WaitSync</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="types/index.html"
+                                  title='mod smithay::backend::graphics::egl::ffi::egl::types'>types</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.FnPtr.html"
+                                  title='struct smithay::backend::graphics::egl::ffi::egl::FnPtr'>FnPtr</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.LIB.html"
+                                  title='struct smithay::backend::graphics::egl::ffi::egl::LIB'>LIB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='constants' class='section-header'><a href="#constants">Constants</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ALPHA_FORMAT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::ALPHA_FORMAT'>ALPHA_FORMAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ALPHA_FORMAT_NONPRE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::ALPHA_FORMAT_NONPRE'>ALPHA_FORMAT_NONPRE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ALPHA_FORMAT_PRE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::ALPHA_FORMAT_PRE'>ALPHA_FORMAT_PRE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ALPHA_MASK_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::ALPHA_MASK_SIZE'>ALPHA_MASK_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.ALPHA_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::ALPHA_SIZE'>ALPHA_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BACK_BUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BACK_BUFFER'>BACK_BUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_ACCESS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_ACCESS'>BAD_ACCESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_ALLOC.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_ALLOC'>BAD_ALLOC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_ATTRIBUTE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_ATTRIBUTE'>BAD_ATTRIBUTE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_CONFIG.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_CONFIG'>BAD_CONFIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_CONTEXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_CONTEXT'>BAD_CONTEXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_CURRENT_SURFACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_CURRENT_SURFACE'>BAD_CURRENT_SURFACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_DISPLAY.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_DISPLAY'>BAD_DISPLAY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_MATCH.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_MATCH'>BAD_MATCH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_NATIVE_PIXMAP.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_NATIVE_PIXMAP'>BAD_NATIVE_PIXMAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_NATIVE_WINDOW.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_NATIVE_WINDOW'>BAD_NATIVE_WINDOW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_PARAMETER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_PARAMETER'>BAD_PARAMETER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BAD_SURFACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BAD_SURFACE'>BAD_SURFACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BIND_TO_TEXTURE_RGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BIND_TO_TEXTURE_RGB'>BIND_TO_TEXTURE_RGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BIND_TO_TEXTURE_RGBA.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BIND_TO_TEXTURE_RGBA'>BIND_TO_TEXTURE_RGBA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BLUE_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BLUE_SIZE'>BLUE_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BUFFER_DESTROYED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BUFFER_DESTROYED'>BUFFER_DESTROYED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BUFFER_PRESERVED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BUFFER_PRESERVED'>BUFFER_PRESERVED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.BUFFER_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::BUFFER_SIZE'>BUFFER_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CLIENT_APIS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CLIENT_APIS'>CLIENT_APIS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CL_EVENT_HANDLE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CL_EVENT_HANDLE'>CL_EVENT_HANDLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.COLORSPACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::COLORSPACE'>COLORSPACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.COLORSPACE_LINEAR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::COLORSPACE_LINEAR'>COLORSPACE_LINEAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.COLORSPACE_sRGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::COLORSPACE_sRGB'>COLORSPACE_sRGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.COLOR_BUFFER_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::COLOR_BUFFER_TYPE'>COLOR_BUFFER_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONDITION_SATISFIED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONDITION_SATISFIED'>CONDITION_SATISFIED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONFIG_CAVEAT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONFIG_CAVEAT'>CONFIG_CAVEAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONFIG_ID.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONFIG_ID'>CONFIG_ID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONFORMANT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONFORMANT'>CONFORMANT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_CLIENT_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_CLIENT_TYPE'>CONTEXT_CLIENT_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_CLIENT_VERSION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_CLIENT_VERSION'>CONTEXT_CLIENT_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_FLAGS_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_FLAGS_KHR'>CONTEXT_FLAGS_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_LOST.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_LOST'>CONTEXT_LOST</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_MAJOR_VERSION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_MAJOR_VERSION'>CONTEXT_MAJOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_MAJOR_VERSION_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_MAJOR_VERSION_KHR'>CONTEXT_MAJOR_VERSION_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_MINOR_VERSION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_MINOR_VERSION'>CONTEXT_MINOR_VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_MINOR_VERSION_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_MINOR_VERSION_KHR'>CONTEXT_MINOR_VERSION_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT'>CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT_KHR'>CONTEXT_OPENGL_COMPATIBILITY_PROFILE_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_CORE_PROFILE_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_CORE_PROFILE_BIT'>CONTEXT_OPENGL_CORE_PROFILE_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_CORE_PROFILE_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_CORE_PROFILE_BIT_KHR'>CONTEXT_OPENGL_CORE_PROFILE_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_DEBUG.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_DEBUG'>CONTEXT_OPENGL_DEBUG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_DEBUG_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_DEBUG_BIT_KHR'>CONTEXT_OPENGL_DEBUG_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_FORWARD_COMPATIBLE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_FORWARD_COMPATIBLE'>CONTEXT_OPENGL_FORWARD_COMPATIBLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_FORWARD_COMPATIBLE_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_FORWARD_COMPATIBLE_BIT_KHR'>CONTEXT_OPENGL_FORWARD_COMPATIBLE_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_NO_ERROR_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_NO_ERROR_KHR'>CONTEXT_OPENGL_NO_ERROR_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_PROFILE_MASK.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_PROFILE_MASK'>CONTEXT_OPENGL_PROFILE_MASK</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_PROFILE_MASK_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_PROFILE_MASK_KHR'>CONTEXT_OPENGL_PROFILE_MASK_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY'>CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_EXT'>CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_KHR'>CONTEXT_OPENGL_RESET_NOTIFICATION_STRATEGY_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_ROBUST_ACCESS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_ROBUST_ACCESS'>CONTEXT_OPENGL_ROBUST_ACCESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_ROBUST_ACCESS_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_ROBUST_ACCESS_BIT_KHR'>CONTEXT_OPENGL_ROBUST_ACCESS_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CONTEXT_OPENGL_ROBUST_ACCESS_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CONTEXT_OPENGL_ROBUST_ACCESS_EXT'>CONTEXT_OPENGL_ROBUST_ACCESS_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.CORE_NATIVE_ENGINE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::CORE_NATIVE_ENGINE'>CORE_NATIVE_ENGINE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DEFAULT_DISPLAY.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::DEFAULT_DISPLAY'>DEFAULT_DISPLAY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DEPTH_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::DEPTH_SIZE'>DEPTH_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DISPLAY_SCALING.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::DISPLAY_SCALING'>DISPLAY_SCALING</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DONT_CARE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::DONT_CARE'>DONT_CARE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.DRAW.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::DRAW'>DRAW</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.EGL_TEXTURE_FORMAT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::EGL_TEXTURE_FORMAT'>EGL_TEXTURE_FORMAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.EXTENSIONS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::EXTENSIONS'>EXTENSIONS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FALSE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::FALSE'>FALSE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.FOREVER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::FOREVER'>FOREVER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_COLORSPACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_COLORSPACE'>GL_COLORSPACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_COLORSPACE_LINEAR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_COLORSPACE_LINEAR'>GL_COLORSPACE_LINEAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_COLORSPACE_SRGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_COLORSPACE_SRGB'>GL_COLORSPACE_SRGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_RENDERBUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_RENDERBUFFER'>GL_RENDERBUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_2D.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_2D'>GL_TEXTURE_2D</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_3D.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_3D'>GL_TEXTURE_3D</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_NEGATIVE_X.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_NEGATIVE_X'>GL_TEXTURE_CUBE_MAP_NEGATIVE_X</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_NEGATIVE_Y.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_NEGATIVE_Y'>GL_TEXTURE_CUBE_MAP_NEGATIVE_Y</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_NEGATIVE_Z.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_NEGATIVE_Z'>GL_TEXTURE_CUBE_MAP_NEGATIVE_Z</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_POSITIVE_X.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_POSITIVE_X'>GL_TEXTURE_CUBE_MAP_POSITIVE_X</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_POSITIVE_Y.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_POSITIVE_Y'>GL_TEXTURE_CUBE_MAP_POSITIVE_Y</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_CUBE_MAP_POSITIVE_Z.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_CUBE_MAP_POSITIVE_Z'>GL_TEXTURE_CUBE_MAP_POSITIVE_Z</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_LEVEL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_LEVEL'>GL_TEXTURE_LEVEL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GL_TEXTURE_ZOFFSET.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GL_TEXTURE_ZOFFSET'>GL_TEXTURE_ZOFFSET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.GREEN_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::GREEN_SIZE'>GREEN_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.HEIGHT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::HEIGHT'>HEIGHT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.HORIZONTAL_RESOLUTION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::HORIZONTAL_RESOLUTION'>HORIZONTAL_RESOLUTION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.IMAGE_PRESERVED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::IMAGE_PRESERVED'>IMAGE_PRESERVED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.IMAGE_PRESERVED_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::IMAGE_PRESERVED_KHR'>IMAGE_PRESERVED_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LARGEST_PBUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LARGEST_PBUFFER'>LARGEST_PBUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LEVEL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LEVEL'>LEVEL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LOSE_CONTEXT_ON_RESET.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LOSE_CONTEXT_ON_RESET'>LOSE_CONTEXT_ON_RESET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LOSE_CONTEXT_ON_RESET_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LOSE_CONTEXT_ON_RESET_EXT'>LOSE_CONTEXT_ON_RESET_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LOSE_CONTEXT_ON_RESET_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LOSE_CONTEXT_ON_RESET_KHR'>LOSE_CONTEXT_ON_RESET_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUMINANCE_BUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LUMINANCE_BUFFER'>LUMINANCE_BUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.LUMINANCE_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::LUMINANCE_SIZE'>LUMINANCE_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MATCH_NATIVE_PIXMAP.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MATCH_NATIVE_PIXMAP'>MATCH_NATIVE_PIXMAP</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MAX_PBUFFER_HEIGHT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MAX_PBUFFER_HEIGHT'>MAX_PBUFFER_HEIGHT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MAX_PBUFFER_PIXELS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MAX_PBUFFER_PIXELS'>MAX_PBUFFER_PIXELS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MAX_PBUFFER_WIDTH.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MAX_PBUFFER_WIDTH'>MAX_PBUFFER_WIDTH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MAX_SWAP_INTERVAL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MAX_SWAP_INTERVAL'>MAX_SWAP_INTERVAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIN_SWAP_INTERVAL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MIN_SWAP_INTERVAL'>MIN_SWAP_INTERVAL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIPMAP_LEVEL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MIPMAP_LEVEL'>MIPMAP_LEVEL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MIPMAP_TEXTURE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MIPMAP_TEXTURE'>MIPMAP_TEXTURE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MULTISAMPLE_RESOLVE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MULTISAMPLE_RESOLVE'>MULTISAMPLE_RESOLVE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MULTISAMPLE_RESOLVE_BOX.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MULTISAMPLE_RESOLVE_BOX'>MULTISAMPLE_RESOLVE_BOX</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MULTISAMPLE_RESOLVE_BOX_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MULTISAMPLE_RESOLVE_BOX_BIT'>MULTISAMPLE_RESOLVE_BOX_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.MULTISAMPLE_RESOLVE_DEFAULT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::MULTISAMPLE_RESOLVE_DEFAULT'>MULTISAMPLE_RESOLVE_DEFAULT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NATIVE_RENDERABLE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NATIVE_RENDERABLE'>NATIVE_RENDERABLE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NATIVE_VISUAL_ID.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NATIVE_VISUAL_ID'>NATIVE_VISUAL_ID</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NATIVE_VISUAL_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NATIVE_VISUAL_TYPE'>NATIVE_VISUAL_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NONE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NONE'>NONE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NON_CONFORMANT_CONFIG.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NON_CONFORMANT_CONFIG'>NON_CONFORMANT_CONFIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NOT_INITIALIZED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NOT_INITIALIZED'>NOT_INITIALIZED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_CONTEXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_CONTEXT'>NO_CONTEXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_DISPLAY.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_DISPLAY'>NO_DISPLAY</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_IMAGE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_IMAGE'>NO_IMAGE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_IMAGE_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_IMAGE_KHR'>NO_IMAGE_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_RESET_NOTIFICATION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_RESET_NOTIFICATION'>NO_RESET_NOTIFICATION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_RESET_NOTIFICATION_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_RESET_NOTIFICATION_EXT'>NO_RESET_NOTIFICATION_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_RESET_NOTIFICATION_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_RESET_NOTIFICATION_KHR'>NO_RESET_NOTIFICATION_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_SURFACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_SURFACE'>NO_SURFACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_SYNC.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_SYNC'>NO_SYNC</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.NO_TEXTURE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::NO_TEXTURE'>NO_TEXTURE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_API.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_API'>OPENGL_API</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_BIT'>OPENGL_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_ES2_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_ES2_BIT'>OPENGL_ES2_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_ES3_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_ES3_BIT'>OPENGL_ES3_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_ES3_BIT_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_ES3_BIT_KHR'>OPENGL_ES3_BIT_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_ES_API.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_ES_API'>OPENGL_ES_API</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENGL_ES_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENGL_ES_BIT'>OPENGL_ES_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENVG_API.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENVG_API'>OPENVG_API</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENVG_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENVG_BIT'>OPENVG_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.OPENVG_IMAGE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::OPENVG_IMAGE'>OPENVG_IMAGE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PBUFFER_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PBUFFER_BIT'>PBUFFER_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PIXEL_ASPECT_RATIO.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PIXEL_ASPECT_RATIO'>PIXEL_ASPECT_RATIO</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PIXMAP_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PIXMAP_BIT'>PIXMAP_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_ANDROID_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_ANDROID_KHR'>PLATFORM_ANDROID_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_DEVICE_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_DEVICE_EXT'>PLATFORM_DEVICE_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_GBM_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_GBM_KHR'>PLATFORM_GBM_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_GBM_MESA.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_GBM_MESA'>PLATFORM_GBM_MESA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_WAYLAND_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_WAYLAND_EXT'>PLATFORM_WAYLAND_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_WAYLAND_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_WAYLAND_KHR'>PLATFORM_WAYLAND_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_X11_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_X11_EXT'>PLATFORM_X11_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_X11_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_X11_KHR'>PLATFORM_X11_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_X11_SCREEN_EXT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_X11_SCREEN_EXT'>PLATFORM_X11_SCREEN_EXT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.PLATFORM_X11_SCREEN_KHR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::PLATFORM_X11_SCREEN_KHR'>PLATFORM_X11_SCREEN_KHR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.READ.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::READ'>READ</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RED_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::RED_SIZE'>RED_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RENDERABLE_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::RENDERABLE_TYPE'>RENDERABLE_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RENDER_BUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::RENDER_BUFFER'>RENDER_BUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.RGB_BUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::RGB_BUFFER'>RGB_BUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SAMPLES.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SAMPLES'>SAMPLES</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SAMPLE_BUFFERS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SAMPLE_BUFFERS'>SAMPLE_BUFFERS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SIGNALED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SIGNALED'>SIGNALED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SINGLE_BUFFER.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SINGLE_BUFFER'>SINGLE_BUFFER</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SLOW_CONFIG.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SLOW_CONFIG'>SLOW_CONFIG</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.STENCIL_SIZE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::STENCIL_SIZE'>STENCIL_SIZE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SUCCESS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SUCCESS'>SUCCESS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SURFACE_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SURFACE_TYPE'>SURFACE_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SWAP_BEHAVIOR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SWAP_BEHAVIOR'>SWAP_BEHAVIOR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SWAP_BEHAVIOR_PRESERVED_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SWAP_BEHAVIOR_PRESERVED_BIT'>SWAP_BEHAVIOR_PRESERVED_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_CL_EVENT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_CL_EVENT'>SYNC_CL_EVENT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_CL_EVENT_COMPLETE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_CL_EVENT_COMPLETE'>SYNC_CL_EVENT_COMPLETE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_CONDITION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_CONDITION'>SYNC_CONDITION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_FENCE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_FENCE'>SYNC_FENCE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_FLUSH_COMMANDS_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_FLUSH_COMMANDS_BIT'>SYNC_FLUSH_COMMANDS_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_PRIOR_COMMANDS_COMPLETE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_PRIOR_COMMANDS_COMPLETE'>SYNC_PRIOR_COMMANDS_COMPLETE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_STATUS.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_STATUS'>SYNC_STATUS</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.SYNC_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::SYNC_TYPE'>SYNC_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_2D.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_2D'>TEXTURE_2D</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_EXTERNAL_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_EXTERNAL_WL'>TEXTURE_EXTERNAL_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_FORMAT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_FORMAT'>TEXTURE_FORMAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_RGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_RGB'>TEXTURE_RGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_RGBA.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_RGBA'>TEXTURE_RGBA</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_TARGET.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_TARGET'>TEXTURE_TARGET</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_Y_UV_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_Y_UV_WL'>TEXTURE_Y_UV_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_Y_U_V_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_Y_U_V_WL'>TEXTURE_Y_U_V_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TEXTURE_Y_XUXV_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TEXTURE_Y_XUXV_WL'>TEXTURE_Y_XUXV_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TIMEOUT_EXPIRED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TIMEOUT_EXPIRED'>TIMEOUT_EXPIRED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRANSPARENT_BLUE_VALUE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRANSPARENT_BLUE_VALUE'>TRANSPARENT_BLUE_VALUE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRANSPARENT_GREEN_VALUE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRANSPARENT_GREEN_VALUE'>TRANSPARENT_GREEN_VALUE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRANSPARENT_RED_VALUE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRANSPARENT_RED_VALUE'>TRANSPARENT_RED_VALUE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRANSPARENT_RGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRANSPARENT_RGB'>TRANSPARENT_RGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRANSPARENT_TYPE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRANSPARENT_TYPE'>TRANSPARENT_TYPE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.TRUE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::TRUE'>TRUE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.UNKNOWN.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::UNKNOWN'>UNKNOWN</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.UNSIGNALED.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::UNSIGNALED'>UNSIGNALED</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VENDOR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VENDOR'>VENDOR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VERSION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VERSION'>VERSION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VERTICAL_RESOLUTION.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VERTICAL_RESOLUTION'>VERTICAL_RESOLUTION</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_ALPHA_FORMAT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_ALPHA_FORMAT'>VG_ALPHA_FORMAT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_ALPHA_FORMAT_NONPRE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_ALPHA_FORMAT_NONPRE'>VG_ALPHA_FORMAT_NONPRE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_ALPHA_FORMAT_PRE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_ALPHA_FORMAT_PRE'>VG_ALPHA_FORMAT_PRE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_ALPHA_FORMAT_PRE_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_ALPHA_FORMAT_PRE_BIT'>VG_ALPHA_FORMAT_PRE_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_COLORSPACE.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_COLORSPACE'>VG_COLORSPACE</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_COLORSPACE_LINEAR.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_COLORSPACE_LINEAR'>VG_COLORSPACE_LINEAR</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_COLORSPACE_LINEAR_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_COLORSPACE_LINEAR_BIT'>VG_COLORSPACE_LINEAR_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.VG_COLORSPACE_sRGB.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::VG_COLORSPACE_sRGB'>VG_COLORSPACE_sRGB</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WAYLAND_BUFFER_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::WAYLAND_BUFFER_WL'>WAYLAND_BUFFER_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WAYLAND_PLANE_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::WAYLAND_PLANE_WL'>WAYLAND_PLANE_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WAYLAND_Y_INVERTED_WL.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::WAYLAND_Y_INVERTED_WL'>WAYLAND_Y_INVERTED_WL</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WIDTH.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::WIDTH'>WIDTH</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="constant" href="constant.WINDOW_BIT.html"
+                                  title='constant smithay::backend::graphics::egl::ffi::egl::WINDOW_BIT'>WINDOW_BIT</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='statics' class='section-header'><a href="#statics">Statics</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="static" href="static.LOAD.html"
+                                  title='static smithay::backend::graphics::egl::ffi::egl::LOAD'>LOAD</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.BindAPI.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::BindAPI'>BindAPI</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.BindTexImage.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::BindTexImage'>BindTexImage</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.BindWaylandDisplayWL.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::BindWaylandDisplayWL'>BindWaylandDisplayWL</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.ChooseConfig.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::ChooseConfig'>ChooseConfig</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.ClientWaitSync.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::ClientWaitSync'>ClientWaitSync</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Fallbacks: ClientWaitSyncKHR</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CopyBuffers.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CopyBuffers'>CopyBuffers</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreateContext.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreateContext'>CreateContext</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreateImage.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreateImage'>CreateImage</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreateImageKHR.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreateImageKHR'>CreateImageKHR</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePbufferFromClientBuffer.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePbufferFromClientBuffer'>CreatePbufferFromClientBuffer</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePbufferSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePbufferSurface'>CreatePbufferSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePixmapSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePixmapSurface'>CreatePixmapSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePlatformPixmapSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePlatformPixmapSurface'>CreatePlatformPixmapSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePlatformPixmapSurfaceEXT.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePlatformPixmapSurfaceEXT'>CreatePlatformPixmapSurfaceEXT</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePlatformWindowSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePlatformWindowSurface'>CreatePlatformWindowSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreatePlatformWindowSurfaceEXT.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreatePlatformWindowSurfaceEXT'>CreatePlatformWindowSurfaceEXT</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreateSync.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreateSync'>CreateSync</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Fallbacks: CreateSync64KHR</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.CreateWindowSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::CreateWindowSurface'>CreateWindowSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.DestroyContext.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::DestroyContext'>DestroyContext</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.DestroyImage.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::DestroyImage'>DestroyImage</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Fallbacks: DestroyImageKHR</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.DestroyImageKHR.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::DestroyImageKHR'>DestroyImageKHR</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.DestroySurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::DestroySurface'>DestroySurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.DestroySync.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::DestroySync'>DestroySync</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                <p>Fallbacks: DestroySyncKHR</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetConfigAttrib.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetConfigAttrib'>GetConfigAttrib</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetConfigs.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetConfigs'>GetConfigs</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetCurrentContext.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetCurrentContext'>GetCurrentContext</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetCurrentDisplay.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetCurrentDisplay'>GetCurrentDisplay</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetCurrentSurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetCurrentSurface'>GetCurrentSurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetDisplay.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetDisplay'>GetDisplay</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetError.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetError'>GetError</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetPlatformDisplay.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetPlatformDisplay'>GetPlatformDisplay</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetPlatformDisplayEXT.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetPlatformDisplayEXT'>GetPlatformDisplayEXT</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetProcAddress.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetProcAddress'>GetProcAddress</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.GetSyncAttrib.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::GetSyncAttrib'>GetSyncAttrib</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Initialize.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::Initialize'>Initialize</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.MakeCurrent.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::MakeCurrent'>MakeCurrent</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.QueryAPI.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::QueryAPI'>QueryAPI</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.QueryContext.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::QueryContext'>QueryContext</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.QueryString.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::QueryString'>QueryString</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.QuerySurface.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::QuerySurface'>QuerySurface</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.QueryWaylandBufferWL.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::QueryWaylandBufferWL'>QueryWaylandBufferWL</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.ReleaseTexImage.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::ReleaseTexImage'>ReleaseTexImage</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.ReleaseThread.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::ReleaseThread'>ReleaseThread</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.SurfaceAttrib.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::SurfaceAttrib'>SurfaceAttrib</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.SwapBuffers.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::SwapBuffers'>SwapBuffers</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.SwapInterval.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::SwapInterval'>SwapInterval</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.Terminate.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::Terminate'>Terminate</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.UnbindWaylandDisplayWL.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::UnbindWaylandDisplayWL'>UnbindWaylandDisplayWL</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.WaitClient.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::WaitClient'>WaitClient</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.WaitGL.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::WaitGL'>WaitGL</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.WaitNative.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::WaitNative'>WaitNative</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.WaitSync.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::WaitSync'>WaitSync</a><a title='unsafe function' href='#'><sup>⚠</sup></a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.load_with.html"
+                                  title='fn smithay::backend::graphics::egl::ffi::egl::load_with'>load_with</a></td>
+                           <td class='docblock-short'>
+                                <p>Load each OpenGL symbol using a custom load function. This allows for the
+use of functions like <code>glfwGetProcAddress</code> or <code>SDL_GL_GetProcAddress</code>.</p>
+
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../../../../../../";window.currentCrate = "smithay";</script><script src="../../../../../../aliases.js"></script><script src="../../../../../../main.js"></script><script defer src="../../../../../../search-index.js"></script></body></html>
